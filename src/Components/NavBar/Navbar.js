@@ -33,7 +33,7 @@ export default function ElevateAppBar() {
       <CssBaseline />
       <Toolbar>
         <Typography variant="h4" className={classes.logo}>
-          App Bar
+          <RouterLink to="/"> App Bar</RouterLink>
         </Typography>
 
         <div className={classes.navlinks}>
@@ -47,5 +47,3 @@ export default function ElevateAppBar() {
     </AppBar>
   );
 }
-
-//1200 and 650
