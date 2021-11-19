@@ -1,11 +1,5 @@
-import Navbar from "./NavBar/Navbar";
-
 function Home() {
-  return (
-    <div>
-      <Navbar />
-    </div>
-  );
+  return <div>Home page</div>;
 }
 
 export default Home;
