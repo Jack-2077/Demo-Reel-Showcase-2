@@ -5,8 +5,10 @@ import Typography from "@mui/material/Typography";
 import CssBaseline from "@mui/material/CssBaseline";
 import Box from "@mui/material/Box";
 import Container from "@mui/material/Container";
+import Link from "@mui/material/Link";
+import { Link as RouterLink } from "react-router-dom";
 
-export default function ElevateAppBar(props) {
+export default function ElevateAppBar() {
   return (
     <React.Fragment>
       <CssBaseline />
@@ -16,6 +18,11 @@ export default function ElevateAppBar(props) {
           <Typography variant="h6" component="div">
             Scroll to Elevate App Bar
           </Typography>
+          {["Info", "Photo", "Work"].map((item) => (
+            <Link component={RouterLink} to={item}>
+              {item} &nbsp;
+            </Link>
+          ))}
         </Toolbar>
       </AppBar>
 
