@@ -14,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <AnimatePresence exitBeforeEnter>
+      <AnimatePresence exitBeforeEnter initial={false}>
         <Switch location={location} key={location.pathname}>
           <Route path='/' component={Home} exact />
           <Route path='/Info' component={Info} />
