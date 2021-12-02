@@ -4,11 +4,23 @@ import reel from './download.png';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
+// const variants = {
+//   hidden: { opacity: 0, x: -100, y: 0 },
+//   enter: { opacity: 1, x: 0.1, y: 0 },
+//   exit: { opacity: 0, x: 0, y: -100 },
+// };
+
 const variants = {
-  hidden: { opacity: 0, x: 100, y: 0 },
+  hidden: { opacity: 0, x: -200, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 100, y: 0 },
+  exit: { opacity: 0, x: 0, y: -100 },
 };
+
+// const variants = {
+//   hidden: { opacity: 0, x: 50, y: 50 },
+//   enter: { opacity: 1, x: -0.5, y: 0 },
+//   exit: { opacity: 0, x: 100, y: 0 },
+// };
 
 const Homediv = () => {
   const styles = {
