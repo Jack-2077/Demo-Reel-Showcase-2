@@ -1,9 +1,4 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Switch,
-  useLocation,
-} from 'react-router-dom';
+import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion/dist/es/components/AnimatePresence/index';
 
 import Home from './Components/Home';
@@ -19,7 +14,7 @@ function App() {
   return (
     <>
       <Navbar />
-      <AnimatePresence>
+      <AnimatePresence exitBeforeEnter>
         <Switch location={location} key={location.pathname}>
           <Route path='/' component={Home} exact />
           <Route path='/Info' component={Info} />
