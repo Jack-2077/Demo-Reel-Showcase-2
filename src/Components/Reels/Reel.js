@@ -1,6 +1,7 @@
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import reel from '../download.png';
+import Container from '@material-ui/core/Container';
 
 export default function Reel() {
   const ReelGrid = () => {
@@ -14,35 +15,27 @@ export default function Reel() {
 
   return (
     <div>
-      <Box sx={{ flexGrow: 1 }}>
-        <Grid
-          container
-          direction='column'
-          justifyContent='space-around'
-          alignItems='center'
-        >
-          <Grid item xs={6}>
-            <iframe
-              title='vimeo-player'
-              src='https://player.vimeo.com/video/507376902?h=5a521858dc?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0'
-              width='1000'
-              height='850'
-              frameborder='0'
-              allow='autoplay; fullscreen'
-              allowfullscreen
-            ></iframe>
-          </Grid>
-          <Grid item xs={6}>
-            <ReelGrid />
-          </Grid>
-          <Grid item xs={12}>
-            <ReelGrid />
-          </Grid>
-          <Grid item xs={6}>
-            <ReelGrid />
-          </Grid>
-        </Grid>
-      </Box>
+      <Container maxWidth='md'>
+        <iframe
+          title='vimeo-player'
+          src='https://player.vimeo.com/video/507376902?h=5a521858dc?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0'
+          frameborder='0'
+          allow='autoplay; fullscreen'
+          allowfullscreen
+        ></iframe>
+      </Container>
+      <Container maxWidth='md'>
+        <ReelGrid />
+      </Container>
+      <Container maxWidth='md'>
+        <ReelGrid />
+      </Container>
+      <Container maxWidth='md'>
+        <ReelGrid />
+      </Container>
+      <Container maxWidth='md'>
+        <ReelGrid />
+      </Container>
     </div>
   );
 }
