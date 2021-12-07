@@ -1,6 +1,8 @@
 import { Route, Switch, useLocation } from 'react-router-dom';
 import { AnimatePresence } from 'framer-motion/dist/es/components/AnimatePresence/index';
 
+import Reel from './Components/Reels/Reel';
+
 import Home from './Components/Home';
 import Info from './Components/Pages/Info';
 import Photo from './Components/Pages/Photo';
@@ -20,6 +22,7 @@ function App() {
           <Route path='/Info' component={Info} />
           <Route path='/Photo' component={Photo} />
           <Route path='/Work' component={Work} />
+          <Route path='/Reel' component={Reel} />
           <Route component={Error} />
         </Switch>
       </AnimatePresence>

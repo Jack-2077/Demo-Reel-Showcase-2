@@ -5,13 +5,6 @@ import Typography from '@mui/material/Typography';
 import CssBaseline from '@mui/material/CssBaseline';
 import { makeStyles } from '@material-ui/core';
 import { Link as RouterLink } from 'react-router-dom';
-import { motion } from 'framer-motion';
-
-const variants = {
-  hidden: { opacity: 0, x: -200, y: 0 },
-  enter: { opacity: 1, x: 0, y: 0 },
-  exit: { opacity: 0, x: 0, y: -100 },
-};
 
 const useStyles = makeStyles((theme) => ({
   navlinks: {
