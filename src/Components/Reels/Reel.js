@@ -2,6 +2,7 @@ import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import reel from '../download.png';
 import Container from '@material-ui/core/Container';
+import './Reel.css'
 
 export default function Reel() {
   const ReelGrid = () => {
@@ -16,6 +17,7 @@ export default function Reel() {
   return (
     <div>
       <Container maxWidth='md'>
+        <div className="videoWrapper">
         <iframe
           title='vimeo-player'
           src='https://player.vimeo.com/video/507376902?h=5a521858dc?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0'
@@ -23,6 +25,7 @@ export default function Reel() {
           allow='autoplay; fullscreen'
           allowfullscreen
         ></iframe>
+        </div>
       </Container>
       <Container maxWidth='md'>
         <ReelGrid />
