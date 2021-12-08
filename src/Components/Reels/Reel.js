@@ -15,8 +15,7 @@ export default function Reel() {
   };
 
   return (
-    <div>
-      <Container maxWidth='md'>
+      <Container maxWidth="xl">
         <div className="videoWrapper">
         <iframe
           title='vimeo-player'
@@ -25,21 +24,13 @@ export default function Reel() {
           allow='autoplay; fullscreen'
           allowfullscreen
         ></iframe>
-        </div>
-      </Container>
-      <Container maxWidth='md'>
+        </div>  
+        <ReelGrid />
+        <ReelGrid />
+        <ReelGrid />
         <ReelGrid />
       </Container>
-      <Container maxWidth='md'>
-        <ReelGrid />
-      </Container>
-      <Container maxWidth='md'>
-        <ReelGrid />
-      </Container>
-      <Container maxWidth='md'>
-        <ReelGrid />
-      </Container>
-    </div>
+    
   );
 }
 
