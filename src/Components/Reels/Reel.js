@@ -1,8 +1,12 @@
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
+import Typography from '@mui/material/Typography';
 import reel from '../download.png';
 import Container from '@material-ui/core/Container';
 import './Reel.css'
+
+
+
 
 export default function Reel() {
   const ReelGrid = () => {
@@ -15,6 +19,11 @@ export default function Reel() {
   };
 
   return (
+    <>
+    <div className="content">
+    <h2>The Evinetta</h2>
+    <p>We designed this car around the incredible 1970's Ferrari Berlinetta concept designed by renowned Pininfarina.  We thought it would be a unique concept to combine the past with the present and package it together as a hybrid.  The Evinetta is propelled by a Tesla Model S powertrain with active ride suspension, custom wheels, and a chassis and interior bits from a Porsche RSR.  
+</p></div>
       <Container maxWidth="xl">
         <div className="videoWrapper">
         <iframe
@@ -30,7 +39,7 @@ export default function Reel() {
         <ReelGrid />
         <ReelGrid />
       </Container>
-    
+    </>
   );
 }
 
