@@ -2,6 +2,7 @@ import React from "react"
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
+//Stanley Park
 import E1 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_02.jpg'
 import E2 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_03.jpg'
 import E3 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_04.jpg'
@@ -28,7 +29,7 @@ import E23 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_035.jpg'
 import E24 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_036.jpg'
 import E25 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_037.jpg' 
 
-
+//Granville Island
 import G1 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_00.jpg'
 import G2 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_01.jpg'
 import G3 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_02.jpg'
@@ -52,7 +53,7 @@ import G20 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_20.jpg'
 import G21 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_21.jpg'
 import G22 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_22.jpg'
 
-
+//North Vancouver
 import NV1 from '../../Photos/2021/NORTHVAN/NORTHVAN_01.jpg'
 import NV2 from '../../Photos/2021/NORTHVAN/NORTHVAN_02.jpg'
 import NV3 from '../../Photos/2021/NORTHVAN/NORTHVAN_03.jpg'
@@ -64,6 +65,7 @@ import NV8 from '../../Photos/2021/NORTHVAN/NORTHVAN_08.jpg'
 import NV9 from '../../Photos/2021/NORTHVAN/NORTHVAN_09.jpg'
 import NV10 from '../../Photos/2021/NORTHVAN/NORTHVAN_10.jpg'
 
+//October
 import Z1 from '../../Photos/2021/OCTOBER_VICKY_STANLEY/OCT_01.jpg'
 import Z2 from '../../Photos/2021/OCTOBER_VICKY_STANLEY/OCT_02.jpg'
 import Z3 from '../../Photos/2021/OCTOBER_VICKY_STANLEY/OCT_03.jpg'
