@@ -1,48 +1,76 @@
-import * as React from 'react';
-import AppBar from '@mui/material/AppBar';
-import Toolbar from '@mui/material/Toolbar';
-import Typography from '@mui/material/Typography';
-import CssBaseline from '@mui/material/CssBaseline';
-import { makeStyles } from '@material-ui/core';
-import { Link as RouterLink } from 'react-router-dom';
+import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
+import Dropdown from './Dropdown';
+import logo from '../logo.png'
 
-const useStyles = makeStyles((theme) => ({
-  navlinks: {
-    marginLeft: 2,
-    display: 'flex',
-  },
-  logo: {
-    flexGrow: '1',
-    cursor: 'pointer',
-  },
-  link: {
-    textDecoration: 'none',
-    color: 'white',
-    fontSize: '17px',
-    marginLeft: 90,
-    '&:hover': {
-      color: '#707070',
-    },
-  },
-}));
+function Navbar() {
+  const [click, setClick] = useState(false);
+  const [dropdown, setDropdown] = useState(false);
 
-export default function ElevateAppBar() {
-  const classes = useStyles();
+  const handleClick = () => setClick(!click);
+  const closeMobileMenu = () => setClick(false);
+
+  const onMouseEnter = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(true);
+    }
+  };
+
+  const onMouseLeave = () => {
+    if (window.innerWidth < 960) {
+      setDropdown(false);
+    } else {
+      setDropdown(false);
+    }
+  };
+
   return (
-    <AppBar style={{ background: '#000200' }} position='static'>
-      <CssBaseline />
-      <Toolbar>
-        <Typography variant='h4' className={classes.logo}>
-          <RouterLink to='/'> App Bar</RouterLink>
-        </Typography>
-        <div className={classes.navlinks}>
-          {['Info', 'Photo', 'Work'].map((item) => (
-            <RouterLink to={item} className={classes.link}>
-              {item}
-            </RouterLink>
-          ))}
+    <>
+      <nav className='navbar'>
+        <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
+          <img src={logo} width="100px" height="100px" alt="logo"/>
+        </Link>
+        <div className='menu-icon' onClick={handleClick}>
+          <i className={click ? 'fas fa-times' : 'fas fa-bars'} />
         </div>
-      </Toolbar>
-    </AppBar>
+        <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+          <li className='nav-item'>
+            <Link to='/Info' className='nav-links' onClick={closeMobileMenu}>
+              Info
+            </Link>
+          </li>
+          <li
+            className='nav-item'
+            onMouseEnter={onMouseEnter}
+            onMouseLeave={onMouseLeave}
+          >
+            <Link
+              to='/services'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Photo <i className='fas fa-caret-down' />
+            </Link>
+            {dropdown && <Dropdown />}
+          </li>
+          <li className='nav-item'>
+            <Link
+              to='/Work'
+              className='nav-links'
+              onClick={closeMobileMenu}
+            >
+              Work
+            </Link>
+          </li>
+          <li className='nav-item'>
+          </li>
+        </ul>
+      </nav>
+    </>
   );
 }
+
+export default Navbar;
