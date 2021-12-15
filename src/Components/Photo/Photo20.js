@@ -36,6 +36,27 @@ import V18 from '../../Photos/2020/VANCITY/VANCITY_18.jpg'
 import V19 from '../../Photos/2020/VANCITY/VANCITY_19.jpg'
 import V20 from '../../Photos/2020/VANCITY/VANCITY_20.jpg'
 
+//YWN
+import Y1 from '../../Photos/2020/YWN/YWN_01.jpg'
+import Y2 from '../../Photos/2020/YWN/YWN_02.jpg'
+import Y3 from '../../Photos/2020/YWN/YWN_03.jpg'
+import Y4 from '../../Photos/2020/YWN/YWN_04.jpg'
+import Y5 from '../../Photos/2020/YWN/YWN_05.jpg'
+import Y6 from '../../Photos/2020/YWN/YWN_06.jpg'
+import Y7 from '../../Photos/2020/YWN/YWN_07.jpg'
+import Y8 from '../../Photos/2020/YWN/YWN_08.jpg'
+import Y9 from '../../Photos/2020/YWN/YWN_09.jpg'
+import Y10 from '../../Photos/2020/YWN/YWN_10.jpg'
+
+import E1 from '../../Photos/2021/ENGLISH_STANLEY/ENGLISH_STANLEY_02.jpg'
+import G1 from '../../Photos/2021/GRANVILLE_WALK_ALVARO/GWALK_00.jpg'
+import NV1 from '../../Photos/2021/NORTHVAN/NORTHVAN_01.jpg'
+import O1 from '../../Photos/2021/OCTOBER_VICKY_STANLEY/OCT_01.jpg'
+
+const night_images = [N1, N2, N3, N4, N5, N6, N7, N8, N9, N10]
+const vancity_images = [V1, V2, V3, V4, V5, V6, V7, V8, V9, V10, V11, V12, V13, V14, V15, V16, V17, V18, V19, V20]
+const ywn_images = [Y1, Y2, Y3, Y4, Y5, Y6, Y7, Y8, Y9, Y10]
+
 const ReelGrid = ({image}) => {
   const styles = {
     width: '100%',
@@ -47,108 +68,31 @@ const ReelGrid = ({image}) => {
 
 
 const Photo20 = () => {
-
- 
   
-
   return (
     <Box sx={{ flexGrow: 1 }}>
-    <Grid container spacing={0.5}>
-      <Grid item xs={12}>
-        <ReelGrid image={N1}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N2}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N3}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N4}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N5}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N6}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N7}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N8}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N9}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={N10}/>
-      </Grid>
+    <Grid container>
 
-      <Grid item xs={12}>
-        <ReelGrid image={V1}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V2}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V3}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V4}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V5}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V6}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V7}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V8}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V9}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V10}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V11}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V12}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V13}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V14}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V15}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V16}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V17}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V18}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V19}/>
-      </Grid>
-      <Grid item xs={12}>
-        <ReelGrid image={V20}/>
-      </Grid>
+{/* night */}      
+      {night_images.map(item => 
+        <Grid item xs={12}>
+        <ReelGrid image={item}/>
+      </Grid>)}
       
+
+{/* vancity */}
+      {vancity_images.map(item => 
+        <Grid item xs={12}>
+        <ReelGrid image={item}/>
+      </Grid>)}
+
+{/* ywn */}
+      {ywn_images.map(item => 
+        <Grid item xs={12}>
+        <ReelGrid image={item}/>
+      </Grid>)} 
       </Grid>
   </Box>
-
   )
 }
 
