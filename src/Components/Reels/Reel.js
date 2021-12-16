@@ -25,7 +25,7 @@ export default function Reel() {
         <div className="videoWrapper">
         <iframe
           title='vimeo-player'
-          src='https://player.vimeo.com/video/507376902?h=5a521858dc?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0'
+          src='https://player.vimeo.com/video/657615916?h=f54b5f2453?color=ffffff&amp;title=0&amp;byline=0&amp;portrait=0'
           frameborder='0'
           allow='autoplay; fullscreen'
           allowfullscreen
