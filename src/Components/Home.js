@@ -4,6 +4,9 @@ import reel from './download.png';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
+import pic1 from '../Assests/PROJECTS/01.GASSTATION/06.jpg';
+import grey1 from '../Assests/PROJECTS/01.GASSTATION/grey.jpg';
+import video1 from '../Assests/PROJECTS/01.GASSTATION/GS01.mp4';
 // const variants = {
 //   hidden: { opacity: 0, x: -100, y: 0 },
 //   enter: { opacity: 1, x: 0.1, y: 0 },
@@ -33,13 +36,13 @@ const Homediv = () => {
   return <div style={styles}>hi</div>;
 };
 
-const ReelGrid = () => {
+const ReelGrid = ({ image }) => {
   const styles = {
     width: '100%',
     height: '100%',
   };
 
-  return <img src={reel} style={styles} />;
+  return <img src={pic1} style={styles} />;
 };
 
 function Home() {
