@@ -13,6 +13,7 @@ import video1 from '../Assests/PROJECTS/01.GASSTATION/GS01.mp4';
 //   exit: { opacity: 0, x: 0, y: -100 },
 // };
 
+const home_images = [pic1, pic1, pic1];
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
@@ -42,7 +43,7 @@ const ReelGrid = ({ image }) => {
     height: '100%',
   };
 
-  return <img src={pic1} style={styles} />;
+  return <img src={image} style={styles} />;
 };
 
 function Home() {
@@ -58,23 +59,12 @@ function Home() {
       <Homediv />
       <div>
         <Box sx={{ flexGrow: 1 }}>
-          <Grid container spacing={0.5}>
-            <Grid item xs={6}>
-              <ReelGrid />
-            </Grid>
-            <Grid item xs={6}>
-              <ReelGrid />
-            </Grid>
-            <Grid item xs={12}>
-              <ReelGrid />
-            </Grid>
-            <Grid item xs={6}>
-              <ReelGrid />
-            </Grid>
-
-            <Grid item xs={6}>
-              <ReelGrid />
-            </Grid>
+          <Grid container>
+            {home_images.map((item) => (
+              <Grid item xs={12}>
+                <ReelGrid image={item} />
+              </Grid>
+            ))}
           </Grid>
         </Box>
       </div>
