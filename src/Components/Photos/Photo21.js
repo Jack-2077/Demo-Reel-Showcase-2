@@ -9,7 +9,7 @@ const ReelGrid = ({ image }) => {
     height: '100%',
   };
 
-  return <img src={image} style={styles} />;
+  return <img src={image} style={styles} alt='photography' />;
 };
 
 const Photo21 = () => {
