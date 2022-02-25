@@ -21,6 +21,23 @@ const ReelGrid = ({ image }) => {
   return <img src={image} style={styles} />;
 };
 
+const ImageGridItem = ({ set }) => {
+  return set.map((item) => (
+    <Grid item xs={12}>
+      <ReelGrid image={item} />
+    </Grid>
+  ));
+};
+
+const VideoGridItem = ({ set }) => {
+  let videoType;
+  return set.map((item, i) => (
+    <video>
+      {i === 7 ? <img src={item} /> : <source src={item} type='video/mp4' />}
+    </video>
+  ));
+};
+
 function Home() {
   return (
     <>
@@ -28,11 +45,15 @@ function Home() {
       <div>
         <Box sx={{ flexGrow: 1 }}>
           <Grid container>
-            {home_images.map((item) => (
-              <Grid item xs={12}>
-                <ReelGrid image={item} />
-              </Grid>
-            ))}
+            {MAIN_SET.map((sets) =>
+              sets.map((set, i) => {
+                return i === 0 || i === 1 ? (
+                  <ImageGridItem set={set} />
+                ) : (
+                  <VideoGridItem set={set} />
+                );
+              })
+            )}
           </Grid>
         </Box>
       </div>
