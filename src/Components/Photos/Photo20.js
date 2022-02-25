@@ -2,7 +2,7 @@ import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 
-import { images_20 } from './index';
+import { images_20 } from '.';
 
 const ReelGrid = ({ image }) => {
   const styles = {
