@@ -48,7 +48,7 @@ import video7 from '../Assests/PROJECTS/07.PORSCHE_SINGER/04.gif';
 import video8 from '../Assests/PROJECTS/09.RESTLESS/FINAL_EDIT_AUG18_v003_FINAL.mp4';
 import video9 from '../Assests/PROJECTS/11.CRITTER/CRITTER01.mp4';
 
-import home_gif from '../Videos/GIF03.gif';
+//import home_gif from '../Videos/GIF03.gif';
 // const variants = {
 //   hidden: { opacity: 0, x: -100, y: 0 },
 //   enter: { opacity: 1, x: 0.1, y: 0 },
@@ -92,7 +92,8 @@ const Homediv = () => {
     width: '100%',
     height: '100%',
   };
-  return <img src={home_gif} style={styles} />;
+  //return <img src={home_gif} style={styles} />;
+  return 'hi';
 };
 
 const ReelGrid = ({ image }) => {

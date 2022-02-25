@@ -6,20 +6,19 @@ import Reel from './Components/Reels/Reel';
 import Home from './Components/Home';
 import Info from './Components/Pages/Info';
 import Photo from './Components/Pages/Photo';
-import Photo20 from './Components/Photo/Photo20';
-import Photo21 from './Components/Photo/Photo21';
+import Photo20 from './Components/Photos/Photo20';
+import Photo21 from './Components/Photos/Photo21';
 import Work from './Components/Pages/Work';
 import Navbar from './Components/NavBar/Navbar';
-
 
 import Error from './Components/Pages/Error';
 
 function App() {
   const location = useLocation();
-  
+
   return (
     <>
-      <Navbar/>
+      <Navbar />
       <AnimatePresence exitBeforeEnter initial={false}>
         <Switch location={location} key={location.pathname}>
           <Route path='/' component={Home} exact />
