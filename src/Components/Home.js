@@ -30,13 +30,13 @@ import pic24 from '../Assests/PROJECTS/09.RESTLESS/Vfx02AkshayVenugopal_VFXPrePr
 import pic25 from '../Assests/PROJECTS/10.TOWNCAR/CAM_02.jpg';
 import pic26 from '../Assests/PROJECTS/10.TOWNCAR/CAM_04_02.jpg';
 import pic27 from '../Assests/PROJECTS/10.TOWNCAR/CAM_05_03.jpg';
-import pic28 from '../Assests/PROJECTS/11.CRITTER/01_001.jpg';
+import pic28 from '../Assests/PROJECTS/11.CRITTER/01_001.JPG';
 
 import grey1 from '../Assests/PROJECTS/01.GASSTATION/grey.jpg';
 import grey2 from '../Assests/PROJECTS/02.ATELIER/ATLR02.jpg';
 import grey3 from '../Assests/PROJECTS/04.VELAR/VLR_02.jpg';
 import grey4 from '../Assests/PROJECTS/07.PORSCHE_SINGER/04b&w.jpg';
-import grey5 from '../Assests/PROJECTS/11.CRITTER/02_085.jpg';
+import grey5 from '../Assests/PROJECTS/11.CRITTER/02_085.JPG';
 
 import video1 from '../Assests/PROJECTS/01.GASSTATION/GS01.mp4';
 import video2 from '../Assests/PROJECTS/02.ATELIER/ATLR01.mp4';
@@ -55,7 +55,26 @@ import home_gif from '../Videos/GIF03.gif';
 //   exit: { opacity: 0, x: 0, y: -100 },
 // };
 
-const home_images = [pic1, pic1, pic1];
+const home_images = [
+  pic1,
+  pic2,
+  pic3,
+  pic4,
+  pic5,
+  pic6,
+  pic7,
+  pic8,
+  pic9,
+  pic10,
+  pic11,
+  pic12,
+  pic13,
+  pic14,
+  pic15,
+  pic16,
+  pic17,
+  pic18,
+];
 const variants = {
   hidden: { opacity: 0, x: -200, y: 0 },
   enter: { opacity: 1, x: 0, y: 0 },
