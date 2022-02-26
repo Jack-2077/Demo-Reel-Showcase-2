@@ -26,13 +26,19 @@ const Homediv = () => {
   return 'hi';
 };
 
-const ReelGrid = ({ image }) => {
+const ReelGrid = ({ image, imageArray }) => {
   const styles = {
     width: '100%',
     height: '100%',
   };
 
-  return <img src={image} style={styles} onClick={() => console.log('hi')} />;
+  return (
+    <img
+      src={imageArray[0][0]}
+      style={styles}
+      onClick={() => console.log('hi')}
+    />
+  );
 };
 
 const ImageGridItem = ({ set }) => {
@@ -71,37 +77,37 @@ function Home() {
         <Box sx={{ flexGrow: 1 }}>
           <Grid container spacing={0.5}>
             <Grid item xs={12}>
-              <ReelGrid image={full_image1} />
+              <ReelGrid image={full_image1} imageArray={MAIN_SET[0]} />
             </Grid>
             <Grid item xs={12}>
-              <ReelGrid image={full_image2} />
+              <ReelGrid image={full_image2} imageArray={MAIN_SET[2]} />
             </Grid>
             <Grid item xs={12}>
-              <ReelGrid image={full_image5} />
+              <ReelGrid image={full_image5} imageArray={MAIN_SET[10]} />
             </Grid>
             <Grid item xs={12}>
-              <ReelGrid image={full_image6} />
+              <ReelGrid image={full_image6} imageArray={MAIN_SET[1]} />
             </Grid>
             <Grid item xs={12}>
-              <ReelGrid image={full_image4} />
+              <ReelGrid image={full_image4} imageArray={MAIN_SET[5]} />
             </Grid>
             <Grid item xs={6}>
-              <ReelGrid image={half_image2} />
+              <ReelGrid image={half_image2} imageArray={MAIN_SET[6]} />
             </Grid>
             <Grid item xs={6}>
-              <ReelGrid image={half_image4} />
+              <ReelGrid image={half_image4} imageArray={MAIN_SET[8]} />
             </Grid>
             <Grid item xs={12}>
-              <ReelGrid image={half_image1} />
+              <ReelGrid image={half_image1} imageArray={MAIN_SET[3]} />
             </Grid>
             <Grid item xs={6}>
-              <ReelGrid image={half_image3} />
+              <ReelGrid image={half_image3} imageArray={MAIN_SET[7]} />
             </Grid>
             <Grid item xs={6}>
-              <ReelGrid image={full_image3} />
+              <ReelGrid image={full_image3} imageArray={MAIN_SET[4]} />
             </Grid>
             <Grid item xs={12}>
-              <ReelGrid image={half_image5} />
+              <ReelGrid image={half_image5} imageArray={MAIN_SET[9]} />
             </Grid>
           </Grid>
         </Box>
