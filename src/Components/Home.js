@@ -32,34 +32,6 @@ const ReelGrid = ({ imageArray }) => {
   );
 };
 
-const ImageGridItem = ({ set }) => {
-  return set.map((item) => (
-    <Grid item xs={12}>
-      <ReelGrid image={item} />
-    </Grid>
-  ));
-};
-
-const VideoGridItem = ({ set }) => {
-  let videoType;
-  return set.map((item, i) => (
-    <>
-      {i === 7 ? (
-        <img src={item} />
-      ) : (
-        <video
-          controls
-          // autostart
-          // autoPlay
-          src={item}
-          type='video/mp4'
-          style={{ width: '100%', height: '100%' }}
-        />
-      )}
-    </>
-  ));
-};
-
 function Home() {
   return (
     <>
