@@ -39,6 +39,10 @@ const VideoGridItem = ({ set }) => {
 const ReelInfo = ({ location }) => {
   const imageArray = location.imageArray;
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [location]);
+
   return (
     <Grid container>
       <ImageGridItem set={imageArray[0]} />
