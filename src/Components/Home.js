@@ -1,6 +1,8 @@
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
 import video1 from '../Assests/PROJECTS/01.GASSTATION/GS01.mp4';
+import ReelInfo from './Pages/ReelInfo';
+import { Redirect, Link } from 'react-router-dom';
 
 import MAIN_SET from '.';
 
@@ -13,18 +15,20 @@ const Homediv = () => {
   return 'hi';
 };
 
-const ReelGrid = ({ imageArray }) => {
-  const styles = {
-    width: '100%',
-    height: '100%',
-  };
+const styles = {
+  width: '100%',
+  height: '100%',
+};
 
+const ReelGrid = ({ imageArray }) => {
+  const newTo = {
+    pathname: '/test/new',
+    param1: imageArray,
+  };
   return (
-    <img
-      src={imageArray[0][0]}
-      style={styles}
-      onClick={() => console.log('hi')}
-    />
+    <Link to={newTo}>
+      <img src={imageArray[0][0]} style={styles} />
+    </Link>
   );
 };
 

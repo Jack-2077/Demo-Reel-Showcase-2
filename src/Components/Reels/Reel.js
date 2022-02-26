@@ -1,4 +1,4 @@
-import reel from '../download.png';
+import reel from '../logo.png';
 import Container from '@material-ui/core/Container';
 import './Reel.css';
 
