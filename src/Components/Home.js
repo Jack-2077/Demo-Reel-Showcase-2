@@ -22,8 +22,8 @@ const styles = {
 
 const ReelGrid = ({ imageArray }) => {
   const newTo = {
-    pathname: '/test/new',
-    param1: imageArray,
+    pathname: '/ReelInfo',
+    imageArray,
   };
   return (
     <Link to={newTo}>

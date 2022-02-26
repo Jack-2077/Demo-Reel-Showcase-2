@@ -27,7 +27,7 @@ function App() {
           <Route exact path='/Photo' component={Photo} />
           <Route path='/Work' component={Work} />
           <Route path='/Reel' component={Reel} />
-          <Route path='/test/new' component={ReelInfo} />
+          <Route path='/ReelInfo' component={ReelInfo} />
           <Route path='/Photo/2020' component={Photo20} />
           <Route path='/Photo/2021' component={Photo21} />
 
