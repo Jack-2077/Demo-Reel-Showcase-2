@@ -29,7 +29,7 @@ const VideoGridItem = ({ set }) => {
           controls
           src={item}
           type='video/mp4'
-          style={{ width: '100%', height: '100%' }}
+          style={{ width: '100%', height: '100%', paddingTop: '5px' }}
         />
       )}
     </>
@@ -44,7 +44,7 @@ const ReelInfo = ({ location }) => {
   }, [location]);
 
   return (
-    <Grid container>
+    <Grid container spacing={0.5}>
       <ImageGridItem set={imageArray[0]} />
       <ImageGridItem set={imageArray[1]} />
       <VideoGridItem set={imageArray[2]} />
